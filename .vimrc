@@ -1,7 +1,14 @@
 "
 " A (not so) minimal vimrc.
 "
-
+" # Install this configuration
+" git clone https://github.com/AngelPone/vim-config ~/.vim
+" cd ~/.vim
+" mkdir files
+" mkdir files/backup
+" mkdir files/swap
+" # Also add the following lines into your bashrc or zshrc
+" export VIMINIT='source ~/.vim/.vimrc'
 " You want Vim, not vi. When Vim finds a vimrc, 'nocompatible' is set anyway.
 " We set it explicitely to make our position clear!
 set nocompatible
