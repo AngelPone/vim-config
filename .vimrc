@@ -1,6 +1,3 @@
-"
-" A (not so) minimal vimrc.
-"
 " # Install this configuration
 " git clone https://github.com/AngelPone/vim-config ~/.vim
 " cd ~/.vim
@@ -9,6 +6,9 @@
 " mkdir files/swap
 " # Also add the following lines into your bashrc or zshrc
 " export VIMINIT='source ~/.vim/.vimrc'
+"
+" A (not so) minimal vimrc.
+"
 " You want Vim, not vi. When Vim finds a vimrc, 'nocompatible' is set anyway.
 " We set it explicitely to make our position clear!
 set nocompatible
@@ -21,8 +21,8 @@ set expandtab              " Use spaces instead of tabs.
 set softtabstop =4         " Tab key indents by 4 spaces.
 set shiftwidth  =4         " >> indents by 4 spaces.
 set shiftround             " >> indents to next multiple of 'shiftwidth'.
+set backspace   =indent,eol,start "Make backspace work as you would expect.
 
-set backspace   =indent,eol,start  " Make backspace work as you would expect.
 set hidden                 " Switch between buffers without having to save first.
 set laststatus  =2         " Always show statusline.
 set display     =lastline  " Show as much as possible of the last line.
@@ -63,7 +63,7 @@ set backup
 set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
 set backupskip  =
-set directory   =$HOME/.vim/files/swap/
+set directory   =$HOME/.vim/files/swap//
 set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo/
